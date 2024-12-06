@@ -37,6 +37,7 @@ After evaluating our multiple classification models; Random-Forest model perform
 Random Forest handles complex, non-linear relationships and feature interactions better than Logistic Regression, which assumes linearity, and it is less prone to overfitting than a single Decision Tree. Although Decision Trees offer easy interpretability, they are more prone to overfitting and instability.
 The Logistic Regression model achieved an accuracy of 83.68%, which is lower than both the Random Forest and Decision Tree models. Logistic Regression is a simple and interpretable model that works well when the relationship between the features and the target variable is linear. However, in cases like of our dataset which has complex, non-linear relationships, it struggles to capture the underlying patterns, leading to lower accuracy.
 Overall, Random Forest is the best choice for this dataset, providing high accuracy and resilience to overfitting, Its ability to aggregate results from multiple trees reduces the model's variance, resulting in higher predictive performance.
+![Alt Text](https://github.com/Jayrikers/Phase3_Project/edit/main/README.md#:~:text=Untitled.ipynb-,roc_curve,-.png)
 
 ## RECOMMENDATIONS
 These recommendations are based on our analysis of the correlation between customer ratings and satisfaction levels for each feature and should guide efforts to enhance customer experience and satisfaction.
