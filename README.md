@@ -50,8 +50,10 @@ Modeling is the process of building and training machine learning models to solv
 
 -Logistic Regression:
 Accuracy: 83.68%, Logistic Regression provided a straightforward and interpretable model. However, its performance was limited due to its linear nature, making it less effective in capturing complex relationships in the data.
+
 -Decision Tree:
 Accuracy: 93.84%, The Decision Tree outperformed Logistic Regression by handling non-linear data and identifying critical decision points. However, it showed a tendency to overfit, which may affect its generalization on unseen data.
+
 -Random Forest:
 Accuracy: 95.92%, Random Forest emerged as the best-performing model. By combining multiple decision trees, it reduced overfitting and improved accuracy and robustness. This ensemble approach excelled at capturing complex patterns in the dataset, making it the most reliable model for predicting customer satisfaction.
 Overall, the Random Forest model is the most suitable for this task due to its superior accuracy and ability to generalize better than the other models. It provides actionable insights for stakeholders while ensuring reliable predictions.
