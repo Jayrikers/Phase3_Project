@@ -12,11 +12,13 @@ The dataset provided by Invistico Airlines contains valuable information about t
 Airline companies operate in a highly competitive market where customer satisfaction significantly impacts loyalty and revenue. The goal is to understand the factors influencing customer satisfaction and predict whether a customer is satisfied or dissatisfied based on service and flight-related attributes.
 
 ### Objectives
-1. Identify key factors that influence customer satisfaction. 2. Develop a predictive model to classify customers as "Satisfied" or "Dissatisfied." 3. Use insights from the model to inform business decisions and improve customer experience.
+1. Identify key factors that influence customer satisfaction.
+2. Develop a predictive model to classify customers as "Satisfied" or "Dissatisfied."
+3. Use insights from the model to inform business decisions and improve customer experience.
 
 ### Stakeholders
 Airline Management: Use the insights to enhance service delivery and improve overall satisfaction scores.
-Customer Service Team: Address pain points identified through the analysis, such as delays or service quality.
+Customer Service Team: Address main points identified through the analysis, such as delays or service quality.
 Marketing Team: Target dissatisfied customers with specific campaigns to improve retention.
 Operations Team: Optimize flight schedules and resource allocation to reduce delays and improve service metrics.
 
@@ -24,7 +26,7 @@ Operations Team: Optimize flight schedules and resource allocation to reduce del
 Improved customer satisfaction scores by addressing key drivers. Increased customer retention and loyalty as measured by repeat bookings. Reduced number of complaints or negative feedback. A predictive model with high accuracy, recall, and F1-score, ensuring effective identification of dissatisfied customers. Actionable insights derived from feature importance analysis, allowing stakeholders to prioritize improvements.
 
 ## DATA UNDERSTANDING
-Our dataset, consists of 129,880 rows and 23 columns, we observed no duplicated records, but there are 393 missing values specifically in the 'Arrival Delay in Minutes' column. The data distribution is largely balanced across the various features. Upon closer examination, we identified a significant issue within certain 'rating' features. These features exhibit extremely low values in rate '0'. This poses a challenge for meaningful analysis. To address this, we decided to combine votes on rate '0' with votes on rate '1'. This step is essential as the majority of our features contain a limited number of 0 ratings compared to other ratings. Moreover, maintaining a rating scale from 1 to 5 is deemed appropriate for our analysis. There is strong correlation of 0.97 between "Departure Delay in Minutes" and 'Arrival Delay in Minutes'. This shows the two variables essentially represent the same information, and therefore, it is advisable to eliminate one of them. Given that 'Arrival Delay in Minutes' also contains missing values, we have decided to proceed with the removal of this variable. This simplification will streamline our analysis while retaining the essential information.
+Our dataset, consists of 129,880 rows and 23 columns, there were no duplicated records, but there are 393 missing values in the 'Arrival Delay in Minutes' column. The data distribution is balanced across the various features. Upon closer examination, we identified a significant issue within certain 'rating' features. These features exhibit extremely low values in rate '0'. This poses a challenge for meaningful analysis. To address this, we decided to combine votes on rate '0' with votes on rate '1'. This step is essential as the majority of our features contain a limited number of 0 ratings compared to other ratings. Moreover, maintaining a rating scale from 1 to 5 is deemed appropriate for our analysis. There is strong correlation of 0.97 between "Departure Delay in Minutes" and 'Arrival Delay in Minutes'. This shows the two variables essentially represent the same information, and therefore, it is advisable to eliminate one of them. Given that 'Arrival Delay in Minutes' also contains missing values, we have decided to proceed with the removal of this variable. This simplification will streamline our analysis while retaining the essential information.
 
 ## Data Visualization
 Based on the visualizations we observe that "Inflight entertainment" plays a key role in customer satisfaction, with a substantial difference between the satisfaction levels of those who are satisfied and dissatisfied. Therefore, it can be considered the most important feature. Additionally, "Seat comfort," "Online support," "Ease of Online booking", " On-board service,", "Leg room service" and "Online boarding" closely follow "Inflight entertainment" in terms of importance.
