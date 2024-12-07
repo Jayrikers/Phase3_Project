@@ -37,18 +37,19 @@ After evaluating our multiple classification models; Random-Forest model perform
 Random Forest handles complex, non-linear relationships and feature interactions better than Logistic Regression, which assumes linearity, and it is less prone to overfitting than a single Decision Tree. Although Decision Trees offer easy interpretability, they are more prone to overfitting and instability.
 The Logistic Regression model achieved an accuracy of 83.68%, which is lower than both the Random Forest and Decision Tree models. Logistic Regression is a simple and interpretable model that works well when the relationship between the features and the target variable is linear. However, in cases like of our dataset which has complex, non-linear relationships, it struggles to capture the underlying patterns, leading to lower accuracy.
 Overall, Random Forest is the best choice for this dataset, providing high accuracy and resilience to overfitting, Its ability to aggregate results from multiple trees reduces the model's variance, resulting in higher predictive performance.
-![ROC Curve](roc_curve.png)
+
 ## RECOMMENDATIONS
-These recommendations are based on our analysis of the correlation between customer ratings and satisfaction levels for each feature and should guide efforts to enhance customer experience and satisfaction.
+The most influential factors contributing to customer satisfaction are Seat Comfort, Inflight Entertainment, and Food and Drink. Prioritizing improvements in these areas can lead to a direct boost in customer satisfaction.
 
- -Enhance Inflight Entertainment: Given its substantial impact on customer satisfaction, investing in and improving inflight entertainment options could yield significant benefits.
+The Operations Team should focus on optimizing flight schedules to reduce delays and ensure smooth transitions from check-in to boarding.
 
- -Prioritize Seat Comfort: Focus on enhancing seat comfort to further elevate customer satisfaction levels.
+The Marketing Team can use the insights to create campaigns targeting customers who are most likely to be dissatisfied, offering them 
 
- -Strengthen Online Support: Continue to provide robust online support services, as they contribute positively to customer satisfaction.
+Regularly gather customer feedback through surveys, social media, and review platforms. Use this feedback to update models and continuously adapt service offerings.
 
- -Monitor and Improve Other Features: While other features show less pronounced effects, they should not be ignored. Continue to monitor and make incremental improvements to all aspects of the airline service to maintain overall customer satisfaction.
- 
+Empowering customer service representatives to offer personalized assistance could increase satisfaction, particularly in situations involving complaints or long wait times.
+
+
  ## CONCLUSION
  Our analysis demonstrates that several factors contribute to customer satisfaction in the airline industry. Notably, gender, customer type, and class play a significant role, with women, loyal customers, and those in the business class generally reporting higher satisfaction levels.
 
