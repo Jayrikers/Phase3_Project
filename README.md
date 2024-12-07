@@ -35,11 +35,26 @@ This analysis assists in prioritizing which aspects of the airline's service may
 To conclude, the distribution of customer ratings across the various features demonstrates varying degrees of influence on customer satisfaction. 'Inflight entertainment' takes precedence, followed by 'Seat comfort' and 'Online support,' while the remaining features show less pronounced effects.
 
 ## Data Preprocessing
-We went through different preprocessing processes which included Encoding our data(using One-Hot-Encoding for nominal categorical values and Label Encoding for ordinal categorical values). After which we scaled our features to ensure that no single feature dominates the learning process due to its magnitude, afterwhich we carried on to modeling and evaluated our models using accuracy metrics.
-After evaluating our multiple classification models; Random-Forest model performs quite well than Logistic Regression and Decision Tree models with an accuracy of 95.92%. This is due to its ensemble learning approach, where multiple decision trees are aggregated to reduce overfitting and improve generalization, making it more robust and accurate.
-Random Forest handles complex, non-linear relationships and feature interactions better than Logistic Regression, which assumes linearity, and it is less prone to overfitting than a single Decision Tree. Although Decision Trees offer easy interpretability, they are more prone to overfitting and instability.
-The Logistic Regression model achieved an accuracy of 83.68%, which is lower than both the Random Forest and Decision Tree models. Logistic Regression is a simple and interpretable model that works well when the relationship between the features and the target variable is linear. However, in cases like of our dataset which has complex, non-linear relationships, it struggles to capture the underlying patterns, leading to lower accuracy.
-Overall, Random Forest is the best choice for this dataset, providing high accuracy and resilience to overfitting, Its ability to aggregate results from multiple trees reduces the model's variance, resulting in higher predictive performance.
+Handle Missing Values Imputed missing values in the 'Arrival Delay in Minutes' column (393 entries).
+Encode Categorical Variables:
+Label Encoding: Applied to 'Gender', 'Customer Type', and 'Type of Travel' for binary categories,
+One-Hot Encoding: Applied to 'Class' to create new columns for each class (Economy, Business, Economy Plus).
+Merged '0' and '1' ratings in certain features e.g., 'Seat Comfort' to maintain a consistent 1-5 scale.
+Scale Numerical Features: Standardized 'Age', 'Flight Distance', and 'Departure Delay in Minutes' using StandardScaler to normalize feature ranges.
+Split Data: Divided the dataset into training 70% and testing 30% subsets for model development and evaluation.
+
+## MODELING
+Modeling is the process of building and training machine learning models to solve specific problems using preprocessed data. In this analysis, three models were developed and evaluated: Logistic Regression, Decision Tree, and Random Forest. Each model was trained on a dataset aimed at predicting customer satisfaction and assessed using metrics like accuracy and ROC-AUC.
+
+-Logistic Regression:
+Accuracy: 83.68%, Logistic Regression provided a straightforward and interpretable model. However, its performance was limited due to its linear nature, making it less effective in capturing complex relationships in the data.
+-Decision Tree:
+Accuracy: 93.84%, The Decision Tree outperformed Logistic Regression by handling non-linear data and identifying critical decision points. However, it showed a tendency to overfit, which may affect its generalization on unseen data.
+-Random Forest:
+Accuracy: 95.92%, Random Forest emerged as the best-performing model. By combining multiple decision trees, it reduced overfitting and improved accuracy and robustness. This ensemble approach excelled at capturing complex patterns in the dataset, making it the most reliable model for predicting customer satisfaction.
+Overall, the Random Forest model is the most suitable for this task due to its superior accuracy and ability to generalize better than the other models. It provides actionable insights for stakeholders while ensuring reliable predictions.
+![image](https://github.com/user-attachments/assets/8c5380e3-682e-404a-867e-01e69c380211)
+
 
 
 ## RECOMMENDATIONS
