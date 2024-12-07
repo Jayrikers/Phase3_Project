@@ -2,6 +2,7 @@
 
 
 # AIRLINES CUSTOMER SATISFACTION
+![image](https://github.com/user-attachments/assets/0edf7ba6-a7e5-4e7d-912a-32b60203cc16)
 
 ## Overview
 The dataset provided by Invistico Airlines contains valuable information about their customers' experiences and satisfaction levels. With an aim of predicting future customer satisfaction and improving service quality, this dataset encompasses various customer attributes and feedback on different aspects of their flights. The primary objectives of this dataset are to predict customer satisfaction and identify areas for service improvement.
@@ -27,6 +28,8 @@ Our dataset, consists of 129,880 rows and 23 columns, we observed no duplicated 
 
 ## Data Visualization
 Based on the visualizations we observe that "Inflight entertainment" plays a key role in customer satisfaction, with a substantial difference between the satisfaction levels of those who are satisfied and dissatisfied. Therefore, it can be considered the most important feature. Additionally, "Seat comfort," "Online support," "Ease of Online booking", " On-board service,", "Leg room service" and "Online boarding" closely follow "Inflight entertainment" in terms of importance.
+![image](https://github.com/user-attachments/assets/7d11b970-2f4a-4eec-92a0-3c8bd577b477)
+
 
 This analysis assists in prioritizing which aspects of the airline's service may require particular attention for enhancing overall customer satisfaction.
 To conclude, the distribution of customer ratings across the various features demonstrates varying degrees of influence on customer satisfaction. 'Inflight entertainment' takes precedence, followed by 'Seat comfort' and 'Online support,' while the remaining features show less pronounced effects.
@@ -37,6 +40,7 @@ After evaluating our multiple classification models; Random-Forest model perform
 Random Forest handles complex, non-linear relationships and feature interactions better than Logistic Regression, which assumes linearity, and it is less prone to overfitting than a single Decision Tree. Although Decision Trees offer easy interpretability, they are more prone to overfitting and instability.
 The Logistic Regression model achieved an accuracy of 83.68%, which is lower than both the Random Forest and Decision Tree models. Logistic Regression is a simple and interpretable model that works well when the relationship between the features and the target variable is linear. However, in cases like of our dataset which has complex, non-linear relationships, it struggles to capture the underlying patterns, leading to lower accuracy.
 Overall, Random Forest is the best choice for this dataset, providing high accuracy and resilience to overfitting, Its ability to aggregate results from multiple trees reduces the model's variance, resulting in higher predictive performance.
+
 
 ## RECOMMENDATIONS
 The most influential factors contributing to customer satisfaction are Seat Comfort, Inflight Entertainment, and Food and Drink. Prioritizing improvements in these areas can lead to a direct boost in customer satisfaction.
